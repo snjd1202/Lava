@@ -106,6 +106,7 @@ public class Ex01 {
 		/*	숙제]
 		 		1년은 365.2426일이다.
 		 		이 날짜는 과연 몇 일, 몇 시간, 몇 분, 몇 초인지 계산해서 출력하세요.*/
+		
 		double time = 365.2426;
 		int sec = (int)((time % 1) * 24 * 60 * 60);
 		
@@ -120,6 +121,23 @@ public class Ex01 {
 		System.out.println(hh + "시간");
 		System.out.println(mm + "분");
 		System.out.println(ss + "초");
+		
+		System.out.println("******************");
+		
+		double ddd = (int)(time / 1);
+		double z = (time%1);
+		int hhh = (int)(z * 24);
+		z %= 3600;
+		int mmm = (int)(z * 60);
+		z %= 60;
+		int sss = (int)(z * 60);
+
+
+				
+		System.out.println(ddd + "일");
+		System.out.println(hhh + "시간");
+		System.out.println(mmm + "분");
+		System.out.println(sss + "초");
 		
 	}
 }
