@@ -19,32 +19,37 @@ public class Ex03 {
 	public Ex03() {
 		abc();
 	}
+	
 	 
 	public void abc() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("(1) 가정용 / (2) 산업용 / (3) 교육용 / (4) 상업용");
 		System.out.println("사용자 코드를 입력하세요. : ");
 		int num1 = sc.nextInt();
-		System.out.print("사용량을 입력하세요. : ");
+		if(!(num1 >= 1 && num1 <=4)) {
+			System.out.print("코드가 잘못되었습니다.");
+			return;
+		}
+		System.out.println("사용량을 입력하세요. : ");
 		int num2 = sc.nextInt();
-		int home = 3800;
-		int ind = 2400;
-		int edu = 2900;
-		int sang = 3200;
-		int yogum = 0;
+		
+		int basic = 3800;
+		int used = 0;
+		int yong = 245;
+		int yogum = basic + used * yong;
 		String use = ""; 
 		 
 		if(num1 == 1) {
-			yogum = home + num2 * 245;
+			yogum = 3800 + num2 * 245;
 			use = "가정용";
 		} else { if(num1 == 2) {
-			yogum = ind + num2 * 157;
+//			yogum = 2400 + num2 * 157;
 			use = "산업용";
 		} else { if(num1 == 3) {
-			yogum = edu + num2 * 167;
+//			yogum = 2900 + num2 * 167;
 			use = "교육용";
 		} else {
-			yogum = sang + num2 * 174;
+//			yogum = 3200 + num2 * 174;
 			use = "상업용";
 		}
 			
