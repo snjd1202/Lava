@@ -100,7 +100,7 @@ package day04;
  		
  		
  */
-public class Hw99 {
+public class Hw00 {
 	public static void main(String[] args) {
 //	1-0 ¹ø
 //		for(int i = 1;i <= 5; i++) {
@@ -299,27 +299,33 @@ public class Hw99 {
 //			}
 //			System.out.println();
 		
-//		for (int i = 1; i <= 5; i++) {
-//          for (int k = 5; k > i; k--) {
-//             System.out.print(i);
-//          	}
-//          	for (int j = 1; j <= i; j++) {
-//          		System.out.print(i+1);
-//          }
-//
-//          System.out.println();
-//       }
+		for (int i = 1; i <= 5; i++) {
+          for (int k = 5; k > i; k--) {
+             System.out.print(i);
+          	}
+          	for (int j = 1; j <= i; j++) {
+          		System.out.print(i+1);
+          }
+
+          System.out.println();
+       }
 		
 //		00
-		for(int i =0; i < 4;i++) {
-			for(int j = 1; j<=4; j++) {
-				if(i>j) {
-				System.out.print(j);
-				}
+//		for(int i =1; i <= 5;i++) {
+//			for(int j = 1; j <= 5; j++) {
+//				if(i<=5) {
+//					System.out.print("\t" + i);
+//				}
+//			}
+//			System.out.println();
+//		}
+//	
+		for(int i = 2; i <=9;i++) {
+			for(int j=1;j<=9;j++) {
+				int result= i * j;
+				System.out.print( i +" x " + j + " = " + result +"\t ");
 			}
-			System.out.println();
 		}
-		}
-	}	
+	}
+}
 	
-
