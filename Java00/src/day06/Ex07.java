@@ -17,6 +17,7 @@ package day06;
 		반환값이 정수
  */
 import java.util.*;
+
 public class Ex07 {
 
 	public static void main(String[] args) {
