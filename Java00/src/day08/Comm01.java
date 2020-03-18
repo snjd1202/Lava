@@ -17,10 +17,7 @@ public class Comm01 {
 		char[] arr = new char[str.length()];
 		
 		for(int i = 0; i < str.length(); i++) {
-//			for(int j = 0; j < arr.length; j++) {
-//			}
-			arr[i] = str.charAt(i);
-	
+			arr[i] = str.charAt(i);	
 		}
 		System.out.println(Arrays.toString(arr));
 
