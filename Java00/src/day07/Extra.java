@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  */
 import javax.swing.*;
 import java.util.*;
-public class Ex05 {
+public class Extra {
 
 	public static void main(String[] args) {
 		String str = JOptionPane.showInputDialog("영문 문자열을 입력하세요.");
