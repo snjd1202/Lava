@@ -23,7 +23,9 @@ package day08;
 public class Comm02 {
 
 	public static void main(String[] args) {
-		int no = 8000;
+		int don = 8000;
+		int lotto = (int)(Math.random()*45-1+1)+1;
+		
 		
 	}
 
