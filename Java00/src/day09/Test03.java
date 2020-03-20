@@ -13,6 +13,7 @@ package day09;
  */
 import javax.swing.*;
 import java.util.*;
+
 public class Test03 {
 	char[] ch;
 	
@@ -53,7 +54,7 @@ public class Test03 {
 		c = new char[5];
 		for(int i = 0; i < 5; i++) {
 			c[i] = (char)('A' + i);
-			System.out.println(c[i]);
+			System.out.printf("%3s",c[i]);
 		}
 		}
 		

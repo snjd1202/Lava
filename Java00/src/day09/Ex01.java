@@ -11,14 +11,16 @@ import java.util.*;
  	2. 단어 수 만큼 배열을 만들고, 배열에 단어를 입력하세요.(toCharArray 사용x)
  */
 public class Ex01 {
+	String str = "GitHub is built for collaboration. Set up an organization to improve the way your team works together, and get access to more features.";
 		public Ex01() {
 		sol01();
 		sol02();
 		}	
 		public void sol01() {
-			String str = "GitHub is built for collaboration. Set up an organization to improve the way your team works together, and get access to more features.";
-			String[] str1 = new String[2];
 			
+			int cnt1 = 0;
+			String[] str1 = new String[cnt1];
+			 
 			for(int i = 0; i < str1.length; i++) {
 					int ch = str.indexOf('.');
 					
@@ -32,9 +34,22 @@ public class Ex01 {
 		
 		
 		public void sol02() {
-			String str = "GitHub is built for collaboration. Set up an organization to improve the way your team works together, and get access to more features.";
 			
 			int cnt = 0;
+			
+			String[] arr = new String[cnt];
+			// dkwlr 
+			String tmp = str;
+			for(int i = 0; i < cnt -1 ; i++ ) {
+				
+				int idx = tmp.indexOf(' ');
+				
+				arr[i] = tmp.substring(0, idx);
+				tmp = str.substring(idx +1);
+			}
+			
+			arr[cnt - 1] = tmp;
+			System.out.println(Arrays.deepToString(arr));
 		}
 		
 		
