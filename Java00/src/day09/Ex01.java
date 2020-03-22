@@ -13,7 +13,7 @@ import java.util.*;
 public class Ex01 {
 	String str = "GitHub is built for collaboration. Set up an organization to improve the way your team works together, and get access to more features.";
 		public Ex01() {
-		sol01();
+		//sol01();
 		sol02();
 		}	
 		public void sol01() {

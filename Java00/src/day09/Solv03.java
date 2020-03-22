@@ -35,15 +35,15 @@ public class Solv03 {
 					
 				}
 				arr[i][5]=total;
-				sum = total;
+//				sum = total;
 			}
 	
 	}
 		// 석차 구하는 법 모름
 	public void setRank() {
 		for(int i = 0; i < arr.length-1; i++) {
-			for(int j = 0; j < arr.length; j++) {
-				if( arr[i][5] > arr[j][5]) {
+			for(int j = i+1; j < arr.length; j++) {
+				if( arr[i][5] < arr[j][5]) {
 					int[] tmp = arr[i];
 					arr[i] = arr[j];
 					arr[j] = tmp;
@@ -51,9 +51,11 @@ public class Solv03 {
 				
 			}
 			
-			rank = arr[i][6];
 		}
-		
+		for(int i = 0; i < arr.length; i++) {
+			arr[i][6] = i+1;
+		}
+//		rank = arr[i][6];
 	}
 	
 	public void setPrint() {
@@ -64,7 +66,7 @@ public class Solv03 {
 						System.out.print(arr[i][j] + " " );
 					}
 					System.out.println();
-					System.out.print("총점 : " + arr[i][5] + " 석차 : " + rank + "등");
+					System.out.print("총점 : " + arr[i][5] + " 석차 : " + arr[i][6] + "등");
 					System.out.println();
 					System.out.println("----------------------");
 				}

@@ -13,24 +13,55 @@ package day10;
 import javax.swing.*;
 import java.util.*;
 public class Inone {
-	int jumsu;
+	int sum;
+	int inone = (int)(Math.random()*(5-2+1)+2);
+	int num;
+	int[][] arr = new int[inone][inone];
+
+//	public int input(int...no) {
+//		for(int i = 0; i < arr.length; i++) {
+//			for(int j = 0; j < arr[i].length; j++) {
+//				num = (int)(Math.random() * (100-1+1) +1);
+//				arr[i][j] = num;
+//			}
+//		}
+//		System.out.println();
+//		return arr.length;
+//	}
 	
-	
-	// 점수 입력
-	public void ipruk(int...no) {
-		
-		for(int i = 0; i < no.length; i++) {
-			Scanner sc = new Scanner(System.in);
-			System.out.print("점수를 입력하세요. : ");
-			jumsu = sc.nextInt();
-			
+	public void jumsu() {
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = 0; j < arr[i].length; j++) {
+				num = (int)(Math.random()*(100 - 1 +1) +1);
+				arr[i][j]= num;
+			}
 		}
-				
 	}
 	
-	//public int getSum() {
-		//int no = 0;
-		//for(int i = 0; i < )
-	//}
+	public void setSum() {
+		int total = 0;
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = 0; j < arr[i].length; j++) {
+				total += arr[i][j];
+			}
+			
+		}
+		sum = total;
+	}
+	
+	public void toPrint() {
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = 0; j < arr[i].length;j++) {
+				System.out.print(arr[i][j] + " ");
+//				System.out.println("점수 : " + arr[i][j] + " 총점 : " + sum);
+//		System.out.print(Arrays.deepToString(arr));
+				
+			}
+			System.out.println("총점 : " + sum);
+			System.out.println();
+		}
+	}
+				
+	
 
 }
