@@ -1,7 +1,7 @@
 package day10;
 	
 /*
-	 	문제 4]
+	 	문  4]
 	
 	학생의 점수를 입력하면 총점을 계산해주는 프로그램을 제작하세요.
 	
@@ -27,8 +27,10 @@ public class Inone {
 		}
 				
 	}
-//	public int getSum() {
-//		int no 
-//	}
+	
+	//public int getSum() {
+		//int no = 0;
+		//for(int i = 0; i < )
+	//}
 
 }

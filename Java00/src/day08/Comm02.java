@@ -24,7 +24,10 @@ public class Comm02 {
 
 	public static void main(String[] args) {
 		int don = 8000;
-		int lotto = (int)(Math.random()*45-1+1)+1;
+		for(int i = 0; i < 5; i++) {
+			int lotto = (int)(Math.random()*45-1+1)+1;
+			
+		}
 		
 		
 	}
