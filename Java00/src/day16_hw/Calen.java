@@ -61,9 +61,9 @@ public class Calen {
 		
 		// 6. after(Object when)
 //		int yr2 = Integer.parseInt((cal.set(cal.YEAR,1994)));
-		int yr2 = cal.get(cal.YEAR);
-		int yr3 = cal.
-		System.out.println(cal.after(yr.2025));
+//		int yr2 = cal.get(cal.YEAR);
+//		int yr3 = cal.
+//		System.out.println(cal.after(yr.2025));
 	}
 
 	public static void main(String[] args) {

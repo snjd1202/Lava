@@ -115,9 +115,15 @@
 			Vector의 특징을 그대로 가지고 있다.
 			
 			다만, 
-			스레드에서 동기화 처리를 자동으로 해줌으로
+			스레드에서 동기화 처리를 자동으로 해주지 않는다.
+			그러다보니 데이터 처리속도가 Vector보다 빠르다.
 			요즘은 Vector 보다는 ArrayList 사용을 선호하는 경향이 있다.
-													
+
+		***													
+			synchronizedList(List list) ==> List를 동기화된 List로 반환
+			synchronizedMap(Map m)		==> Map을 동기화 처리된 Map으로 반환
+			synchronizedSet(Set s)		==> Set을 동기화 처리된 Set으로 반환
+		
 		사용방법]
 			Vector와 유사하다.
 			
