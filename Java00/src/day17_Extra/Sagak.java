@@ -65,11 +65,14 @@ public class Sagak implements Comparable{
 		this.area = width * height;
 	}
 	
+	public int hashCode() {
+		return width;
+	}
+	
 	public boolean equals(Object obj) {
-		// 강제 형변환하는 함수
 		Sagak s = (Sagak)obj;
 		
-		return this.width == s.width;
+		return (this.width == s.width) ? true : false;
 	}
 
 

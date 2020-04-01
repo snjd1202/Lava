@@ -13,8 +13,24 @@ package day17_Extra;
 import java.util.*;
 
 public class Ex02 {
-
 	public Ex02() {
+		HashSet<Sagak> set = new HashSet<Sagak>();
+		int cnt = 0;
+		for(;;) {
+			cnt++;
+//			System.out.println(cnt++);
+			int width = (int)(Math.random() * 11+5);
+			int height = (int)(Math.random() * 11+5);
+			set.add(new Sagak(width, height));
+			if(set.size() == 5) {
+				break;
+			}
+		}
+		System.out.println("½ÇÆÐÈ½¼ö : " + ((cnt+1)-5));
+		for(Sagak s : set) {
+			System.out.print("°¡·Î : " + s.getWidth() + " ¼¼·Î : " + s.getHeight());
+			System.out.println(" ³ÐÀÌ : " + s.getArea());
+		}
 	
 		
 	}
