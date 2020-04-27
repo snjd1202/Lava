@@ -16,7 +16,7 @@ public class AddMember01 {
 		mVO.setPw("12345");
 		mVO.setMail("sdh@increpas.com");
 		mVO.setGen("M");
-		mVO.setTel("010-9823-5579");
+		mVO.setTel("010-1234-1234");
 		mVO.setAno(11);
 		
 		// 데이터는 준비 되었으니 

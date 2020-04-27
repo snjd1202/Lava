@@ -26,7 +26,7 @@ public class MemberSQL {
 			buff.append("	member ");
 			buff.append("WHERE ");
 			buff.append("	isshow = 'Y' ");
-			buff.append("	AND MNO = '?' ");
+			buff.append("	AND MNO = ? ");
 			break;
 		case ADD_MEMB:
 			buff.append("INSERT INTO ");
