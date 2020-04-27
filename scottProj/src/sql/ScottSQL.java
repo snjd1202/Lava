@@ -11,11 +11,11 @@ public class ScottSQL {
 		switch(code) {
 		case SNAME:
 			buff.append("SELECT ");
-			buff.append("	empno, ename, sal ");
+			buff.append("	empno, ename, hiredate, sal ");
 			buff.append("FROM ");
 			buff.append("	EMP0 ");
 			buff.append("WHERE ");
-			buff.append("	name ");
+			buff.append("	ename = ? ");
 			break;
 		case SADD:
 			buff.append("INSERT INTO ");
